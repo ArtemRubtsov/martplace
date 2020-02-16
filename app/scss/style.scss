@@ -1,0 +1,125 @@
+@import 'vars';
+@import 'global';
+@import 'fonts';
+
+// start header
+.header{
+    &__top{
+        background-color: #eef1f3;
+    }
+    &__top-inner{
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+    }
+    &__top-panel{
+         display: flex;
+         align-items: center;
+    }
+    &__btn{
+        a{
+            margin-right: 51px;
+            width: 140px;
+            height: 36px;
+            border-radius: 20px;
+            padding: 11px 18px 11px 18px;
+            text-align: center;
+            background-color: #0674ec;
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+    &__icon{
+        margin-right: 20px;
+    }
+    &__top-icon{
+        margin-right: 32px;
+    }
+    &__top-ava{
+        margin-right: 22px;
+    }
+    &__top-bio{
+        line-height: 22px;
+    }
+}
+.mart{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 28px;
+    color: #000;
+    margin-left: 3px;
+}
+.place{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 28px;
+    color: #0674ec;
+}
+.top-price{
+    display: block;
+    color: #0674ec;
+}
+.top-name{
+    font-family: 'Quicksand', sans-serif;
+}
+.header__down{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__list{
+    li{
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 500;
+        & + li {
+            margin-left: 30px;
+        }
+    }
+}
+.header__inner-search{
+    max-width: 360px;
+    position: relative;
+    input{
+        width: 360px;
+        height: 46px;
+        display: block;
+        padding-left: 25px;
+        padding-right: 70px;
+        outline: none;
+        border: 1px solid #d9dfe5;
+        border-radius: 30px;
+        &::placeholder{
+            font-size: 15px;
+            color: #898f96;
+            font-family: 'Quicksand', sans-serif;
+        }
+    }
+    button{
+        position: absolute;
+        border: none;
+        background-color: $blue;
+        width: 70px;
+        height: 46px;
+        border-radius: 30px;
+        right: 0;
+        top: 0px;
+        cursor: pointer;
+    }
+}
+// end header
