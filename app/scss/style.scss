@@ -240,7 +240,7 @@
 .check{
     margin-top: 70px;
     background-color: #fff;
-    height: 593px;
+    // height: 593px;
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     &__inner{
@@ -251,6 +251,7 @@
         max-width: 361px;
         min-height: 407px;
         text-align: center;
+        // margin-bottom: 122px;
     }
     &__image{
         margin-bottom: 38px;
@@ -266,14 +267,173 @@
         color: #555555;
         line-height: 28px;
     }
-    &__item{
-        &:hover{
-            max-width: 361px;
-            box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
-            padding: 45px 35px;
-            min-height: 407px;
+    // &__item{
+    //     &:hover{
+    //         max-width: 361px;
+    //         box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    //         padding: 45px 35px;
+    //         min-height: 407px;
+    //         transition: all .5s;
+    //     }
+    // }
+}
+.products{
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f6f7fb;
+    height: 1725px;
+    &__release{
+        padding-top: 120px;
+    }
+}
+.release__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    padding: 46px 30px 43px 31px;
+    margin-bottom: 28px;
+}
+.release__title{
+    font-size: 30px;
+    line-height: 28px;
+    font-weight: 400;
+}
+.release__text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #747b86;
+    margin-left: 650px;
+    margin-bottom: 10px;
+}
+.products__inner-btn{
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    padding: 30px 113px 30px 30px;
+    margin-bottom: 50px;
+}
+.products-btn{
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px 8px 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #f1f3f6;
+    color: #888e98;
+    outline: none;
+    & + .products-btn{
+        margin-left: 7px;
+    }
+}
+.products-btn:hover{
+    background-color: $blue;
+    color: #fff;
+}
+.products__inner-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.products__item{
+    max-width: 361px;
+    width: 100%;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    background-color: #fff;
+    &-img{
+        min-height: 230px;
+        background-repeat: no-repeat;
+        display: block;
+        background-position: center;
+        background-size: cover;
+    }
+    &-content{
+        padding-right: 25px;
+    }
+    &-title{
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 30px;
+        padding-left: 30px;
+        margin-bottom: 20px;
+    }
+    &-name{
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        margin-bottom: 34px;
+    }
+    &-category{
+        font-size: 15px;
+        line-height: 30px;
+        font-weight: 500;
+        margin-left: 7px;
+    }
+    &-ico{
+        margin-left: 20px;
+    }
+    &-type{
+        margin-left: 10px;
+        font-size: 15px;
+        font-weight: 400;
+        a{
+            color: #7347c1;
+        }
+    }
+    &-text{
+        margin-left: 30px;
+        font-size: 18px;
+        line-height: 22px;
+        color: #555555;
+        margin-bottom: 34px;
+    }
+    &-price{
+        padding: 8px 17px;
+        background-color: #e6f1fd;
+        border-radius: 20px;
+        margin-left: 23px;
+        a{
+            font-weight: 500;
+            color: $blue;
+        }
+    }
+    &-like{
+        display: flex;
+        align-items: center;
+        padding-right: 150px;
+        img{
+            margin-right: 6px;
         }
     }
 }
+.products-bascet{
+    display: flex;
+}
+.products__item-bascet{
+    margin-right: 10px;
+}
+.products__bascet-price{
+    color: $blue;
+}
+.products__item-bottom{
+    border-top: 1px solid #ececec;
+}
+.products__inner-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 16px;
+}
+.products__inner-bottom{
+    padding-right: 25px;
+}
+
 
   
