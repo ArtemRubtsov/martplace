@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Template</title>
@@ -168,17 +169,19 @@
 
             <div class="products__plugins">
                 <div class="products__inner-btn">
-                    <button class="products-btn">Plugins</button>
-                    <button class="products-btn">WordPress</button>
-                    <button class="products-btn">Site Template</button>
-                    <button class="products-btn">PSD Template</button>
-                    <button class="products-btn">Joomla</button>
-                    <button class="products-btn">User Interface</button>
-                    <button class="products-btn">Landing Page</button>
-                    <button class="products-btn">Software</button>
+                    <button type="button" data-filter=".category-wordpress" class="products-btn">Plugins</button>
+                    <button type="button" data-filter=".category-wordpress" class="products-btn">WordPress</button>
+                    <button type="button" data-filter=".category-sitetemplate" class="products-btn">Site
+                        Template</button>
+                    <button type="button" data-filter=".category-psdtemplate" class="products-btn">PSD Template</button>
+                    <button type="button" data-filter=".category-joomla" class="products-btn">Joomla</button>
+                    <button type="button" data-filter=".category-userinterface" class="products-btn">User
+                        Interface</button>
+                    <button type="button" data-filter=".category-landingpage" class="products-btn">Landing Page</button>
+                    <button type="button" data-filter=".category-software" class="products-btn">Software</button>
                 </div>
                 <div class="products__inner-box">
-                    <div class="products__item">
+                    <div class="products__item mix category-wordpress category-new" data-order="1">
                         <a class="products__item-img" href="#"
                             style="background-image: url(images/content/products-content.jpg);"></a>
                         <div class="products__wrap">
@@ -228,7 +231,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products__item">
+                    <div class="products__item mix category-psdtemplate" data-order="2">
                         <a class="products__item-img" href="#"
                             style="background-image: url(images/content/products-content.jpg);"></a>
                         <div class="products__wrap">
@@ -278,7 +281,57 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products__item">
+                    <div class="products__item mix category-joomla" data-order="3">
+                        <a class="products__item-img" href="#"
+                            style="background-image: url(images/content/products-content.jpg);"></a>
+                        <div class="products__wrap">
+                            <div class="products__item-content">
+                                <div class="products__item-title">
+                                    <a href="#">E-commerce Shopping Cart</a>
+                                </div>
+                                <div class="products__item-name">
+                                    <div class="products__item-ava">
+                                        <img src="images/content/products-ava.jpg" alt="">
+                                    </div>
+                                    <div class="products__item-category">
+                                        <a href="#">Theme-Valley</a>
+                                    </div>
+                                    <div class="products__item-ico">
+                                        <img src="images/content/products-ico.jpg" alt="">
+                                    </div>
+                                    <div class="products__item-type">
+                                        <a href="#">Plugin</a>
+                                    </div>
+                                </div>
+                                <div class="products__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="products__item-bottom" data-order="1">
+                                <div class="products__inner-bottom">
+                                    <div class="products__item-price">
+                                        <a href="#">$20</a>
+                                    </div>
+                                    <div class="products-like">
+                                        <div class="products__item-like">
+                                            <img src="images/content/heart.jpg" alt="">
+                                            90
+                                        </div>
+                                    </div>
+                                    <div class="products-bascet">
+                                        <div class="products__item-bascet">
+                                            <img src="images/content/cart.jpg" alt="">
+                                        </div>
+                                        <div class="products__bascet-price">
+                                            246
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item mix category-userinterface category-new" data-order="4">
                         <a class="products__item-img" href="#"
                             style="background-image: url(images/content/products-content.jpg);"></a>
                         <div class="products__wrap">
@@ -328,7 +381,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products__item">
+                    <div class="products__item mix category-landingpage category-new" data-order="5">
                         <a class="products__item-img" href="#"
                             style="background-image: url(images/content/products-content.jpg);"></a>
                         <div class="products__wrap">
@@ -378,7 +431,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products__item">
+                    <div class="products__item mix category-plugins" data-order="1">
                         <a class="products__item-img" href="#"
                             style="background-image: url(images/content/products-content.jpg);"></a>
                         <div class="products__wrap">
@@ -428,7 +481,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products__item">
+                    <div class="products__item mix category-plugins category-new" data-order="1">
                         <a class="products__item-img" href="#"
                             style="background-image: url(images/content/products-content.jpg);"></a>
                         <div class="products__wrap">
@@ -473,6 +526,433 @@
                                         <div class="products__bascet-price">
                                             246
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item mix category-plugins" data-order="1">
+                        <a class="products__item-img" href="#"
+                            style="background-image: url(images/content/products-content.jpg);"></a>
+                        <div class="products__wrap">
+                            <div class="products__item-content">
+                                <div class="products__item-title">
+                                    <a href="#">E-commerce Shopping Cart</a>
+                                </div>
+                                <div class="products__item-name">
+                                    <div class="products__item-ava">
+                                        <img src="images/content/products-ava.jpg" alt="">
+                                    </div>
+                                    <div class="products__item-category">
+                                        <a href="#">Theme-Valley</a>
+                                    </div>
+                                    <div class="products__item-ico">
+                                        <img src="images/content/products-ico.jpg" alt="">
+                                    </div>
+                                    <div class="products__item-type">
+                                        <a href="#">Plugin</a>
+                                    </div>
+                                </div>
+                                <div class="products__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="products__item-bottom">
+                                <div class="products__inner-bottom">
+                                    <div class="products__item-price">
+                                        <a href="#">$20</a>
+                                    </div>
+                                    <div class="products-like">
+                                        <div class="products__item-like">
+                                            <img src="images/content/heart.jpg" alt="">
+                                            90
+                                        </div>
+                                    </div>
+                                    <div class="products-bascet">
+                                        <div class="products__item-bascet">
+                                            <img src="images/content/cart.jpg" alt="">
+                                        </div>
+                                        <div class="products__bascet-price">
+                                            246
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item mix category-joomla" data-order="4">
+                        <a class="products__item-img" href="#"
+                            style="background-image: url(images/content/products-content.jpg);"></a>
+                        <div class="products__wrap">
+                            <div class="products__item-content">
+                                <div class="products__item-title">
+                                    <a href="#">E-commerce Shopping Cart</a>
+                                </div>
+                                <div class="products__item-name">
+                                    <div class="products__item-ava">
+                                        <img src="images/content/products-ava.jpg" alt="">
+                                    </div>
+                                    <div class="products__item-category">
+                                        <a href="#">Theme-Valley</a>
+                                    </div>
+                                    <div class="products__item-ico">
+                                        <img src="images/content/products-ico.jpg" alt="">
+                                    </div>
+                                    <div class="products__item-type">
+                                        <a href="#">Plugin</a>
+                                    </div>
+                                </div>
+                                <div class="products__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="products__item-bottom">
+                                <div class="products__inner-bottom">
+                                    <div class="products__item-price">
+                                        <a href="#">$20</a>
+                                    </div>
+                                    <div class="products-like">
+                                        <div class="products__item-like">
+                                            <img src="images/content/heart.jpg" alt="">
+                                            90
+                                        </div>
+                                    </div>
+                                    <div class="products-bascet">
+                                        <div class="products__item-bascet">
+                                            <img src="images/content/cart.jpg" alt="">
+                                        </div>
+                                        <div class="products__bascet-price">
+                                            246
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item mix category-wordpress" data-order="4">
+                        <a class="products__item-img" href="#"
+                            style="background-image: url(images/content/products-content.jpg);"></a>
+                        <div class="products__wrap">
+                            <div class="products__item-content">
+                                <div class="products__item-title">
+                                    <a href="#">E-commerce Shopping Cart</a>
+                                </div>
+                                <div class="products__item-name">
+                                    <div class="products__item-ava">
+                                        <img src="images/content/products-ava.jpg" alt="">
+                                    </div>
+                                    <div class="products__item-category">
+                                        <a href="#">Theme-Valley</a>
+                                    </div>
+                                    <div class="products__item-ico">
+                                        <img src="images/content/products-ico.jpg" alt="">
+                                    </div>
+                                    <div class="products__item-type">
+                                        <a href="#">Plugin</a>
+                                    </div>
+                                </div>
+                                <div class="products__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="products__item-bottom">
+                                <div class="products__inner-bottom">
+                                    <div class="products__item-price">
+                                        <a href="#">$20</a>
+                                    </div>
+                                    <div class="products-like">
+                                        <div class="products__item-like">
+                                            <img src="images/content/heart.jpg" alt="">
+                                            90
+                                        </div>
+                                    </div>
+                                    <div class="products-bascet">
+                                        <div class="products__item-bascet">
+                                            <img src="images/content/cart.jpg" alt="">
+                                        </div>
+                                        <div class="products__bascet-price">
+                                            246
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item mix category-wordpress" data-order="2">
+                        <a class="products__item-img" href="#"
+                            style="background-image: url(images/content/products-content.jpg);"></a>
+                        <div class="products__wrap">
+                            <div class="products__item-content">
+                                <div class="products__item-title">
+                                    <a href="#">E-commerce Shopping Cart</a>
+                                </div>
+                                <div class="products__item-name">
+                                    <div class="products__item-ava">
+                                        <img src="images/content/products-ava.jpg" alt="">
+                                    </div>
+                                    <div class="products__item-category">
+                                        <a href="#">Theme-Valley</a>
+                                    </div>
+                                    <div class="products__item-ico">
+                                        <img src="images/content/products-ico.jpg" alt="">
+                                    </div>
+                                    <div class="products__item-type">
+                                        <a href="#">Plugin</a>
+                                    </div>
+                                </div>
+                                <div class="products__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="products__item-bottom">
+                                <div class="products__inner-bottom">
+                                    <div class="products__item-price">
+                                        <a href="#">$20</a>
+                                    </div>
+                                    <div class="products-like">
+                                        <div class="products__item-like">
+                                            <img src="images/content/heart.jpg" alt="">
+                                            90
+                                        </div>
+                                    </div>
+                                    <div class="products-bascet">
+                                        <div class="products__item-bascet">
+                                            <img src="images/content/cart.jpg" alt="">
+                                        </div>
+                                        <div class="products__bascet-price">
+                                            246
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item mix category-sitetemplate" data-order="4">
+                        <a class="products__item-img" href="#"
+                            style="background-image: url(images/content/products-content.jpg);"></a>
+                        <div class="products__wrap">
+                            <div class="products__item-content">
+                                <div class="products__item-title">
+                                    <a href="#">E-commerce Shopping Cart</a>
+                                </div>
+                                <div class="products__item-name">
+                                    <div class="products__item-ava">
+                                        <img src="images/content/products-ava.jpg" alt="">
+                                    </div>
+                                    <div class="products__item-category">
+                                        <a href="#">Theme-Valley</a>
+                                    </div>
+                                    <div class="products__item-ico">
+                                        <img src="images/content/products-ico.jpg" alt="">
+                                    </div>
+                                    <div class="products__item-type">
+                                        <a href="#">Plugin</a>
+                                    </div>
+                                </div>
+                                <div class="products__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="products__item-bottom">
+                                <div class="products__inner-bottom">
+                                    <div class="products__item-price">
+                                        <a href="#">$20</a>
+                                    </div>
+                                    <div class="products-like">
+                                        <div class="products__item-like">
+                                            <img src="images/content/heart.jpg" alt="">
+                                            90
+                                        </div>
+                                    </div>
+                                    <div class="products-bascet">
+                                        <div class="products__item-bascet">
+                                            <img src="images/content/cart.jpg" alt="">
+                                        </div>
+                                        <div class="products__bascet-price">
+                                            246
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="products__down-btn">
+                <div class="products__new-btn">
+                    <button type="button" data-filter=".category-new" class="products__new-btn">
+                        All New Products
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="followers">
+        <div class="container">
+            <div class="followers__top-info">
+                <div class="followers__inner-slider">
+                    <div class="followers__title">
+                        Your Followers Feed
+                    </div>
+                    <div class="followers__button">
+                        <button class="next"></button>
+                        <button class="back"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="followers__inner-item">
+                <div class="followers__item mix " data-order="4">
+                    <a class="followers__item-img" href="#"
+                        style="background-image: url(images/content/products-content.jpg);"></a>
+                    <div class="followers__wrap">
+                        <div class="followers__item-content">
+                            <div class="followers__item-title">
+                                <a href="#">E-commerce Shopping Cart</a>
+                            </div>
+                            <div class="followers__item-name">
+                                <div class="followers__item-ava">
+                                    <img src="images/content/products-ava.jpg" alt="">
+                                </div>
+                                <div class="followers__item-category">
+                                    <a href="#">Theme-Valley</a>
+                                </div>
+                                <div class="followers__item-ico">
+                                    <img src="images/content/products-ico.jpg" alt="">
+                                </div>
+                                <div class="followers__item-type">
+                                    <a href="#">Plugin</a>
+                                </div>
+                            </div>
+                            <div class="followers__item-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </div>
+                        </div>
+                        <div class="followers__item-bottom">
+                            <div class="followers__inner-bottom">
+                                <div class="followers__item-price">
+                                    <a href="#">$20</a>
+                                </div>
+                                <div class="followers-like">
+                                    <div class="followers__item-like">
+                                        <img src="images/content/heart.jpg" alt="">
+                                        90
+                                    </div>
+                                </div>
+                                <div class="followers-bascet">
+                                    <div class="followers__item-bascet">
+                                        <img src="images/content/cart.jpg" alt="">
+                                    </div>
+                                    <div class="followers__bascet-price">
+                                        246
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="followers__item mix " data-order="4">
+                    <a class="followers__item-img" href="#"
+                        style="background-image: url(images/content/products-content.jpg);"></a>
+                    <div class="followers__wrap">
+                        <div class="followers__item-content">
+                            <div class="followers__item-title">
+                                <a href="#">E-commerce Shopping Cart</a>
+                            </div>
+                            <div class="followers__item-name">
+                                <div class="followers__item-ava">
+                                    <img src="images/content/products-ava.jpg" alt="">
+                                </div>
+                                <div class="followers__item-category">
+                                    <a href="#">Theme-Valley</a>
+                                </div>
+                                <div class="followers__item-ico">
+                                    <img src="images/content/products-ico.jpg" alt="">
+                                </div>
+                                <div class="followers__item-type">
+                                    <a href="#">Plugin</a>
+                                </div>
+                            </div>
+                            <div class="followers__item-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </div>
+                        </div>
+                        <div class="followers__item-bottom">
+                            <div class="followers__inner-bottom">
+                                <div class="followers__item-price">
+                                    <a href="#">$20</a>
+                                </div>
+                                <div class="followers-like">
+                                    <div class="followers__item-like">
+                                        <img src="images/content/heart.jpg" alt="">
+                                        90
+                                    </div>
+                                </div>
+                                <div class="followers-bascet">
+                                    <div class="followers__item-bascet">
+                                        <img src="images/content/cart.jpg" alt="">
+                                    </div>
+                                    <div class="followers__bascet-price">
+                                        246
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="followers__item mix " data-order="4">
+                    <a class="followers__item-img" href="#"
+                        style="background-image: url(images/content/products-content.jpg);"></a>
+                    <div class="followers__wrap">
+                        <div class="followers__item-content">
+                            <div class="followers__item-title">
+                                <a href="#">E-commerce Shopping Cart</a>
+                            </div>
+                            <div class="followers__item-name">
+                                <div class="followers__item-ava">
+                                    <img src="images/content/products-ava.jpg" alt="">
+                                </div>
+                                <div class="followers__item-category">
+                                    <a href="#">Theme-Valley</a>
+                                </div>
+                                <div class="followers__item-ico">
+                                    <img src="images/content/products-ico.jpg" alt="">
+                                </div>
+                                <div class="followers__item-type">
+                                    <a href="#">Plugin</a>
+                                </div>
+                            </div>
+                            <div class="followers__item-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </div>
+                        </div>
+                        <div class="followers__item-bottom">
+                            <div class="followers__inner-bottom">
+                                <div class="followers__item-price">
+                                    <a href="#">$20</a>
+                                </div>
+                                <div class="followers-like">
+                                    <div class="followers__item-like">
+                                        <img src="images/content/heart.jpg" alt="">
+                                        90
+                                    </div>
+                                </div>
+                                <div class="followers-bascet">
+                                    <div class="followers__item-bascet">
+                                        <img src="images/content/cart.jpg" alt="">
+                                    </div>
+                                    <div class="followers__bascet-price">
+                                        246
                                     </div>
                                 </div>
                             </div>
@@ -480,11 +960,217 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
+    <section class="fact">
+        <div class="container">
+            <div class="fact__inner">
+                <div class="fact__inner-item">
+                    <div class="fact__item"> 
+                        <div class="fact__img-box"> 
+                        <a class="fact-img" href="#"><img src="images/fact-icon/briefcase.png" alt=""></a>
+                        </div>  
+                        <a class="fact-count yellow" href="#">38,436</a>
+                        <div class="fact-text">items for sale</div>
+                    </div>
+                    <div class="fact__item">
+                        <div class="fact__img-box">
+                            <a class="fact-img" href="#"><img src="images/fact-icon/cloud-download.png" alt=""></a>
+                        </div>
+                        <a class="fact-count blue" href="#">3,736</a>
+                        <div class="fact-text">total sales</div>
+                    </div>
+                    <div class="fact__item">
+                        <div class="fact__img-box">
+                            <a class="fact-img" href="#"><img src="images/fact-icon/smile.png" alt=""></a>
+                        </div>
+                        <a class="fact-count green" href="#">2,736</a>
+                        <div class="fact-text">happy customers</div>
+                    </div>
+                    <div class="fact__item">
+                        <div class="fact__img-box">
+                            <a class="fact-img" href="#"><img src="images/fact-icon/users.png" alt=""></a>
+                        </div>
+                        <a class="fact-count red" href="#">25,736</a>
+                        <div class="fact-text">members</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="choose">
+        <div class="container">
+            <div class="choose__inner-box">
+                <div class="choose__inner-info">
+                    <div class="choose__info-title">
+                        Why Choose <span>MartPlace</span>
+                    </div>
+                    <div class="choose__info-text">
+                        Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis
+                        fugats. Lid est laborum dolo rumes fugats untras.
+                    </div>
+                </div>
+                <div class="choose__inner-items">
+                    <div class="choose__item">
+                        <div class="choose__item-num">
+                            01
+                        </div>
+                        <a href="#" class="choose__item-img"><img src="images/choose-icon/license.jpg" alt=""></a>
+                        <div class="choose__item-title">
+                            One Time Payment
+                        </div>
+                        <div class="choose__item-text">
+                            Nunc placerat mi id nisi interdum mollis.
+                            Praesent pharetra, justo ut scelerisque 
+                            the mattis, leo quam aliquet diam
+                            congue is laoreet elit metus.
+                        </div>
+                    </div>
+                    <div class="choose__item">
+                        <div class="choose__item-num">
+                            02
+                        </div>
+                        <a href="#" class="choose__item-img"><img src="images/choose-icon/magic-wand.jpg" alt=""></a>
+                        <div class="choose__item-title">
+                            One Time Payment
+                        </div>
+                        <div class="choose__item-text">
+                            Nunc placerat mi id nisi interdum mollis.
+                            Praesent pharetra, justo ut scelerisque 
+                            the mattis, leo quam aliquet diam
+                            congue is laoreet elit metus.
+                        </div>
+                    </div>
+                    <div class="choose__item">
+                        <div class="choose__item-num">
+                            03
+                        </div>
+                        <a href="#" class="choose__item-img"><img src="images/choose-icon/lock.jpg" alt=""></a>
+                        <div class="choose__item-title">
+                            One Time Payment
+                        </div>
+                        <div class="choose__item-text">
+                            Nunc placerat mi id nisi interdum mollis.
+                            Praesent pharetra, justo ut scelerisque 
+                            the mattis, leo quam aliquet diam
+                            congue is laoreet elit metus.
+                        </div>
+                    </div>
+                    <div class="choose__item">
+                        <div class="choose__item-num">
+                            04
+                        </div>
+                        <a href="#" class="choose__item-img"><img src="images/choose-icon/chart-bars.jpg" alt=""></a>
+                        <div class="choose__item-title">
+                            One Time Payment
+                        </div>
+                        <div class="choose__item-text">
+                            Nunc placerat mi id nisi interdum mollis.
+                            Praesent pharetra, justo ut scelerisque 
+                            the mattis, leo quam aliquet diam
+                            congue is laoreet elit metus.
+                        </div>
+                    </div>
+                    <div class="choose__item">
+                        <div class="choose__item-num">
+                            05
+                        </div>
+                        <a href="#" class="choose__item-img"><img src="images/choose-icon/leaf.jpg" alt=""></a>
+                        <div class="choose__item-title">
+                            One Time Payment
+                        </div>
+                        <div class="choose__item-text">
+                            Nunc placerat mi id nisi interdum mollis.
+                            Praesent pharetra, justo ut scelerisque 
+                            the mattis, leo quam aliquet diam
+                            congue is laoreet elit metus.
+                        </div>
+                    </div>
+                    <div class="choose__item">
+                        <div class="choose__item-num">
+                            06
+                        </div>
+                        <div class="choose__img-box">
+                        <a href="#" class="choose__item-img"><img src="images/choose-icon/phone.jpg" alt=""></a>
+                        </div>
+                        <div class="choose__item-title">
+                            One Time Payment
+                        </div>
+                        <div class="choose__item-text">
+                            Nunc placerat mi id nisi interdum mollis.
+                            Praesent pharetra, justo ut scelerisque 
+                            the mattis, leo quam aliquet diam
+                            congue is laoreet elit metus.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shopping">
+        <div class="shopping__sell-your" style="background-image: url(images/sell-your.png);"></div>
+        <div class="shopping__start-shop" style="background-image: url(images/start-shop.png);"></div>
+    </section>
+
+    <section class="feedback">
+        <div class="container">
+            <div class="feedback__info">
+                <div class="feedback__title">
+                    Our Clients <span>Feedback</span>
+                </div>
+                <div class="feedback__text">
+                    Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis 
+                    fugats. Lid est laborum dolo rumes fugats untras.
+                </div>
+            </div>
+            <div class="feedback__box">
+                <div class="feedback__inner-users">
+                    <div class="feedback__item">
+                        <div class="feedback__item-user">
+                            <a href="#" class="feedback__item-img" style="background-image: url(images/feedback/user.jpg);"></a>
+                            <div class="feedback__item-bio">
+                                <a href="#" class="feedback-name">Taofiqul Hakim</a>
+                                <div class="feedback-hoby">Product Designer</div>
+                            </div>
+                        </div>
+                        <div class="feedback__text-user">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                            ut scelerisque the mattis, leo quam aliquet diam congue is the 
+                            laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. 
+                            Praesent the pharetra, justo ut scelerisque.
+                        </div>
+                    </div>
+                    <div class="feedback__item">
+                        <div class="feedback__item-user">
+                            <a href="#" class="feedback__item-img" style="background-image: url(images/feedback/user.jpg);"></a>
+                            <div class="feedback__item-bio">
+                                <a href="#" class="feedback-name">Saifullah Al Murtafee</a>
+                                <div class="feedback-hoby">Product Designer</div>
+                            </div>
+                            <div class="feedback-mes"></div>
+                        </div>
+                        <div class="feedback__text-user">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                            ut scelerisque the mattis, leo quam aliquet diam congue is the 
+                            laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. 
+                            Praesent the pharetra, justo ut scelerisque.
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="feedback__btn">
+                <a class="feedback__rev" href="#">View All Reviews</a>
+            </div>
+        </div>
+    </section>
+
+ 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>
